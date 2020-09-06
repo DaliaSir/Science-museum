@@ -1,0 +1,38 @@
+
+/* COLOR
+
+ Color Theme Swatches in Hex 
+.color-theme_science-01_4x-1-hex { color: #D91A83; } - rose
+.color-theme_science-01_4x-2-hex { color: #73206D; } - purple
+.color-theme_science-01_4x-3-hex { color: #351C59; } - dark violet
+.color-theme_science-01_4x-4-hex { color: #3DADD9; } - light blue
+.color-theme_science-01_4x-5-hex { color: #F6A448; } - mustard yellow
+
+Color Theme Swatches in RGBA
+.color-theme_science-01_4x-1-rgba { color: rgba(217, 26, 131, 1); } - rose
+.color-theme_science-01_4x-2-rgba { color: rgba(115, 32, 109, 1); } - purple
+.color-theme_science-01_4x-3-rgba { color: rgba(53, 28, 89, 1); } - dark violet
+.color-theme_science-01_4x-4-rgba { color: rgba(61, 173, 217, 1); } - light blue
+.color-theme_science-01_4x-5-rgba { color: rgba(246, 164, 72, 1); } - mustard yellow
+*/
+
+/* FONT
+
+font-family: 'Jura', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* ------------------------------------------------------------ GENERAL STYLES ----------------------------------------------------------------- */
+html {
+    background-color: #E1E1E1;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+   
+    background-color: #FFFFFF;
+    color: #000000;
+}
