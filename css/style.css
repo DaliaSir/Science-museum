@@ -44,6 +44,127 @@ body {
     color: #000000;
 }
 
+h1 {
+    font-family: 'Jura', 'Tahoma', sans-serif;
+    font-size: 3.375em;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+a {
+    font-family: 'Jura', 'Tahoma', sans-serif;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* ------------------------------------------------------------ HEADER ----------------------------------------------------------------- */
+
+header {
+    background-color: #351C59;
+    padding: 10px 20px;
+}
+
+header img {
+    width: 90px;
+}
+
+/* -------------------------------- Hamburger menu -------------------------------- */
+
+nav {
+    display: none;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+
+.navigation {
+    color: #FFFFFF;
+}
+
+nav ul {
+    list-style: none;
+    line-height: 1.5 em;
+    float: right;
+    background-color: #351C59;
+    padding: 20px;
+    margin: 0;
+}
+
+nav a {
+    color:#FFFFFF;
+}
+
+nav a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #F6A448;
+}
+
+#active {
+    color: #F6A448;
+}
+
+.navigation i:hover {
+    color: #F6A448;
+    cursor: pointer;
+}
+
+.navigation i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .exhibition_links-icon img {
     background-color: #3DADD9;
     width: 100px;
