@@ -79,6 +79,50 @@ a {
     text-transform: uppercase;
     text-decoration: none;
 }
+a:hover {
+    cursor: pointer;
+}
+
+.button {
+    background-color: #3DADD9;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow:  1px 1px 6px 1px  rgba(53, 28, 89, 0.2);
+    
+}
+
+.button:hover {
+    background-color: rgba(61, 173, 217, 0.7);
+}
+
+.button:active {
+    background-color: rgba(61, 173, 217, 1);
+    font-size: 1.3em;
+}
+
+.back-to-top {
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 25px 0px;
+    text-align: center;
+    margin: 0;
+
+}
+
+.back-to-top a {
+    color: #000000;
+}
+
+.back-to-top a:hover {
+    text-decoration: underline;
+}
+
+.back-to-top a:active {
+    font-size: 1.3em;
+    color: #F6A448;
+}
 
 /* ------------------------------------------------------------ HEADER ----------------------------------------------------------------- */
 
@@ -113,9 +157,10 @@ nav ul {
     list-style: none;
     line-height: 1.5 em;
     float: right;
-    background-color: #351C59;
+    background-color: rgba(53, 28, 89, 0.9);
     padding: 20px;
     margin: 0;
+    box-shadow: 2px 5px 25px 0 rgba(0, 0, 0, 0.5);
 }
 
 nav a {
@@ -123,7 +168,6 @@ nav a {
 }
 
 nav a:hover {
-    cursor: pointer;
     text-decoration: underline;
 }
 
@@ -149,7 +193,12 @@ nav a:active {
 }
 
 
+/* ------------------------------------------------------------ FOOTER ----------------------------------------------------------------- */
 
+footer {
+    background-color: #351C59;
+    color: #FFFFFF;
+}
 
 
 
