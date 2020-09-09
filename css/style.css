@@ -21,6 +21,13 @@ Color Theme Swatches in RGBA
 font-family: 'Jura', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
+/*Icons at exhibion.html made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                <a href="https://www.flaticon.com/authors/darius-dan" title="Darius Dan">Darius Dan</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+                <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+*/
+
 
 /* ------------------------------------------------------------ GENERAL STYLES ----------------------------------------------------------------- */
 html {
@@ -35,4 +42,16 @@ body {
    
     background-color: #FFFFFF;
     color: #000000;
+}
+
+.exhibition_links-icon img {
+    background-color: #3DADD9;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    outline-color: #000000;
+   
+    
+
 }
