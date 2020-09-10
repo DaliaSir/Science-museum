@@ -45,16 +45,17 @@ body {
 
 h1 {
     font-family: 'Jura', 'Tahoma', sans-serif;
-    font-size: 3.375em;
+    font-size: 2.75em;
     color: #FFFFFF;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0;
 }
 
 h2 {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
 }
 
@@ -155,12 +156,17 @@ nav {
 
 nav ul {
     list-style: none;
-    line-height: 1.5 em;
+    line-height: 2em;
     float: right;
-    background-color: rgba(53, 28, 89, 0.9);
+    background-color: rgba(53, 28, 89, 1);
     padding: 20px;
     margin: 0;
-    box-shadow: 2px 5px 25px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 25px 0 rgba(0, 0, 0, 0.5);
+    position: absolute;
+    right: 20px;
+    top: 75px;
+    z-index: 2;
+    border-radius: 0 0 6px 6px;
 }
 
 nav a {
@@ -173,6 +179,7 @@ nav a:hover {
 
 nav a:active {
     color: #F6A448;
+    font-size: 1.3em;
 }
 
 #active {
@@ -288,6 +295,103 @@ footer {
     font-size: 1.3em;
 }
 
+/* -------------------------------------------------------------------- HOME PAGE 
+---------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* -------------------------------- Intro -------------------------------- */
+.main-intro {
+    /*background-image: url("../images/home/home-main-milky-way-greg-rakozy-m.jpg");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 770px;
+}
+
+.main-intro-text {
+    background-color: rgba(115, 32, 109, 0.9);
+    margin: 0 20px;
+    padding: 15px;
+    max-width: 360px;
+    height: 410px;
+    box-shadow: 2px 5px 25px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    color: #FFFFFF;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    position: relative;
+}
+
+.main-intro-text span {
+    display: block;
+    max-width: 200px;
+    margin-top: 30px;
+}
+
+.main-intro-text a {
+    position: absolute;
+    bottom: 40px;
+}
+
+.home_main-intro {
+    background-image: url("../images/home/home-main-milky-way-greg-rakozy-m.jpg");
+}
+
+.visit_main-intro {
+    background-image: url("../images/visit/visit-main-scott-webb-m.jpg");
+}
+
+.exhibitions_main-intro {
+    background-image: url("../images/exhibitions/exhibitions-main-michal-parzuchowski-m.jpg");
+}
+
+.events_main-intro {
+    background-image: url("../images/events/events-main-rodolfo-cuadros-m.jpg");
+}
+
+.get-involved_main-intro {
+    background-image: url("../images/get-involved/get-involved-main-grant-ritchie-m.jpg");
+}
+
+.contact_main-intro {
+    background-image: url("../images/contact/contact-main-william-bout-m.jpg");
+}
+
+
+/* -------------------------------- Content -------------------------------- */
+
+.home_main-exhibition-spaces {
+    background-color: #351C59;
+    color: #FFFFFF;
+}
+
+.home_main-exhibitions-text {
+    background-color: #F6A448;
+    color: #FFFFFF;
+}
+
+.home_main-young-stars-club p {
+    color: #FFFFFF;
+    font-size: 1.125em;
+    background-color:  rgba(115, 32, 109, 1);
+    text-align: center;
+    padding: 20px 40px;
+    position: relative;
+    top: 100px;
+    margin: 20px;
+}
+
+.home_main-young-stars-club p::first-line {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.home_main-young-stars-club {
+    background-image: url(../images/home/home-children-science-lab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 330px;
+    opacity: 0.5;
+}
 
 
 
@@ -297,6 +401,44 @@ footer {
 
 
 
+
+@media all and (min-width: 361px) {
+    .main-intro {
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 770px;
+    }  
+
+    .home_main-intro {
+        background-image: url("../images/home/home-main-milky-way-greg-rakozy.jpg");
+    }
+
+    .visit_main-intro {
+        background-image: url("../images/visit/visit-main-scott-webb.jpg");
+    }
+
+    .exhibitions_main-intro {
+        background-image: url("../images/exhibitions/exhibitions-main-michal-parzuchowski.jpg");
+    }
+
+    .events_main-intro {
+        background-image: url("../images/events/events-main-rodolfo-cuadros.jpg");
+    }
+
+    .get-involved_main-intro {
+        background-image: url("../images/get-involved/get-involved-main-grant-ritchie.jpg");
+    }
+
+    .contact_main-intro {
+        background-image: url("../images/contact/contact-main-william-bout.jpg");
+    }
+
+
+
+
+
+
+}
 
 
 
