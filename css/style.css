@@ -86,12 +86,14 @@ a:hover {
 }
 
 .button {
+    display: inline-block;
     background-color: #3DADD9;
     color: #FFFFFF;
-    padding: 8px 16px;
+    padding: 10px 28px;
     border-radius: 6px;
     text-align: center;
     box-shadow:  1px 1px 6px 1px  rgba(53, 28, 89, 0.2);
+    margin: 10px 0px;
 }
 
 .button:hover {
@@ -298,7 +300,6 @@ footer {
 
 /* -------------------------------- Intro -------------------------------- */
 .main-intro {
-    /*background-image: url("../images/home/home-main-milky-way-greg-rakozy-m.jpg");*/
     background-repeat: no-repeat;
     background-position: center;
     min-height: 770px;
@@ -308,7 +309,7 @@ footer {
 
 .main-intro-text {
     background-color: rgba(115, 32, 109, 0.9);
-    margin: 0 20px;
+    margin: 0 5%;
     padding: 15px;
     max-width: 360px;
     height: 410px;
@@ -319,6 +320,10 @@ footer {
     top: 40px;
     z-index: 1;
     position: relative;
+}
+
+.main-intro-text p {
+    line-height: 140%;
 }
 
 .main-intro-text h2 {
@@ -333,7 +338,7 @@ footer {
 
 .main-intro-text a {
     position: absolute;
-    bottom: 40px;
+    bottom: 5%;
 }
 
 .home_main-intro {
@@ -370,9 +375,9 @@ footer {
 
 .home_main-exhibitions-text {
     background-color: #F6A448;
-    color: #FFFFFF;
+    color: #000000;
     padding: 10px 20px;
-    margin: 10%;
+    margin: 40px 10%;
     border-radius: 6px;
 }
 
@@ -384,7 +389,7 @@ footer {
 
 .home_main-upcoming-events, .home_main-exhibition-spaces {
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 .home_main-upcoming-events h2 {
     color: #351C59;
@@ -392,7 +397,7 @@ footer {
 }
 
 .home_main-upcoming-events a, .home_main-exhibition-spaces a {
-    margin: 40px 20px 40px 20px;
+    margin: 20px;
 }
 
 .home_main-event-container {
@@ -400,7 +405,6 @@ footer {
     text-align: left;
     justify-content: space-around;
     flex-direction: column;
-    align-items: stretch;
 }
 
 .home_main-event-content {
@@ -415,7 +419,7 @@ footer {
 }
 
 .home_main-event img, .home_main-exhibitions img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .big-img {
@@ -429,7 +433,6 @@ footer {
     text-align: left;
     justify-content: space-evenly;
     flex-direction: column;
-    align-content: stretch;
 }
 
 .home_main-exhibitions-content {
@@ -444,13 +447,7 @@ footer {
     margin: 20px;
 }
 
-
-
-
-
-
-
-
+/*----------YOUNG STARS CLUB----------*/
 
 .home_main-young-stars-club {
     background-image: url(../images/home/home-children-science-lab.jpg);
@@ -489,18 +486,45 @@ footer {
 /* -------------------------------------------------------------------- VISIT 
 ---------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+.visit_hours {
+    padding: 5% 5%;
+}
+
 .visit_location, .visit_food, .visit_shop {
     background-color: #351C59;
     color: #FFFFFF;
+    padding: 5% 5%;
+}
+
+.visit_admission {
+    background-color: #E1E1E1;
+    text-align: center;
+    padding: 20px 5%;
+}
+
+.visit_accessibility {
+    text-align: center;
+    padding: 20px 5%;
 }
 
 .visit_shools {
     background-color: #F6A448;
+    padding: 20px 5%;
+}
+
+.visit_shools h2 {
+    text-align: center;
 }
 
 .visit_hours h2, .visit_admission h2, .visit_accessibility h2 {
     color: #351C59;
     font-weight: 700;
+}
+
+.visit_hours-location-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 
@@ -616,12 +640,42 @@ footer {
         background-image: url("../images/contact/contact-main-william-bout.jpg");
     }
 
+    .main-intro-text h2 {
+        margin-top: 30px;
+    }
+
+    .main-intro-text {
+        min-height: 450px;
+    }
+
+    /*----------FONT SIZE----------*/
+
+    
+    
+    h1 {
+        font-size: 3.5em;
+        letter-spacing: -0.04em;
+    }
+    
+    h2 {
+        font-size: 2.25em;
+    }
+    
+    h3, h4 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1.125em;
+    }
+
+
+
      /*----------HOME----------*/
    
 
     .home_main-event-container, .home_main-exhibitions-container {
         flex-direction: row;
-        align-items: stretch;
     }
 
     .small-img {
@@ -637,7 +691,7 @@ footer {
     }
 
     .home_main-exhibitions-text {
-        display: block;
+        display: inline-block;
     }
 
     .home_main-young-stars-club-text {
@@ -645,11 +699,72 @@ footer {
         margin: 0 10%;
     }
 
+    .home_main-exhibitions-content {
+        max-width: 380px;
+    }
+/*----------VISIT----------*/
+
+    .visit_hours-location-container {
+        flex-direction: row;
+    }
+
+    .visit_food img, .visit_shop img {
+        float: left;
+        margin: 5%;
+    }
+
+    .visit_food , .visit_shop {
+        display: inline-block;
+        background-position: center;
+    }
+
+    .visit_accessibility, .visit_shools {
+        clear: both;
+    }
 
 
 }
 
+@media all and (min-width: 992px) {
 
+    .home_main-event-container {
+        justify-content: center;
+    }
+
+    .home_main-event {
+        margin: 60px;
+    }
+
+    h2 {
+        font-size: 3.5em;
+    }
+    
+    h3, h4 {
+        font-size: 2.25em;
+    }
+    
+    p {
+        font-size: 1.5em;
+    }
+
+    .main-intro-text p {
+        font-size: 1.125em;
+    }
+    
+    .main-intro-text h2 {
+        font-size: 2.25em;
+    }
+
+}
+
+
+
+@media all and (min-width: 1690px) {
+    .home_main-intro {
+        background-image: url("../images/home/home-main-milky-way-greg-rakozy-big.jpg");
+    }
+
+}
 
 
 
