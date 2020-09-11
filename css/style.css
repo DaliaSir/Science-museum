@@ -92,7 +92,6 @@ a:hover {
     border-radius: 6px;
     text-align: center;
     box-shadow:  1px 1px 6px 1px  rgba(53, 28, 89, 0.2);
-    
 }
 
 .button:hover {
@@ -213,7 +212,7 @@ footer {
     padding: 20px;
     justify-content: space-around;
     flex-wrap: wrap;
-   align-content: space-between;
+    align-content: space-between;
 }
 
 .footer-wrapper-column {
@@ -372,32 +371,118 @@ footer {
 .home_main-exhibitions-text {
     background-color: #F6A448;
     color: #FFFFFF;
+    padding: 10px 20px;
+    margin: 10%;
+    border-radius: 6px;
 }
 
-.home_main-young-stars-club p {
-    color: #FFFFFF;
-    font-size: 1.125em;
-    background-color:  rgba(115, 32, 109, 1);
+.home_main-exhibitions-text {
+    display: none;
+}
+
+ /*----------UPCOMING EVENTS----------*/
+
+.home_main-upcoming-events, .home_main-exhibition-spaces {
     text-align: center;
-    padding: 20px 40px;
-    position: relative;
-    top: 100px;
+    padding: 20px;
+}
+.home_main-upcoming-events h2 {
+    color: #351C59;
+    font-weight: 700;
+}
+
+.home_main-upcoming-events a, .home_main-exhibition-spaces a {
+    margin: 40px 20px 40px 20px;
+}
+
+.home_main-event-container {
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.home_main-event-content {
+    background-color: #E1E1E1;
+    max-width: 280px;
+    padding: 25px 20px 20px 20px;
+    border-radius: 0 0 6px 6px;
+}
+    
+.home_main-event {
     margin: 20px;
 }
 
-.home_main-young-stars-club p::first-line {
-    font-size: 1.5em;
-    font-weight: 700;
+.home_main-event img, .home_main-exhibitions img {
+    max-width: 100%;
 }
+
+.big-img {
+    display: none;
+}
+
+ /*----------EXHIBITIONS----------*/
+
+.home_main-exhibitions-container {
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+.home_main-exhibitions-content {
+    background-color: #FFFFFF;
+    color: #000000;
+    max-width: 280px;
+    padding: 20px;
+    border-radius: 0 0 6px 6px;
+}
+
+.home_main-exhibitions {
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
 
 .home_main-young-stars-club {
     background-image: url(../images/home/home-children-science-lab.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: 330px;
-    opacity: 0.5;
+    opacity: 0.6;
     background-size: cover;
+    width: 100%;
 }
+
+.home_main-young-stars-club-text {
+    color: #FFFFFF;
+    font-size: 1.125em;
+    background-color:  rgba(115, 32, 109, 0.9);
+    text-align: center;
+    padding: 20px 40px;
+    position: relative;
+    top: 15%;
+    margin: 0 5%;
+    border-radius: 6px;
+}
+
+.home_main-young-stars-club-text h2 {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.home_main-young-stars-club-text p {
+    margin: 10px 0;
+}
+
 
 
 
@@ -531,8 +616,34 @@ footer {
         background-image: url("../images/contact/contact-main-william-bout.jpg");
     }
 
+     /*----------HOME----------*/
+   
 
+    .home_main-event-container, .home_main-exhibitions-container {
+        flex-direction: row;
+        align-items: stretch;
+    }
 
+    .small-img {
+        display: none;
+    }
+
+    .big-img {
+        display: inline;
+    }
+
+    .home_main-event-content {
+        max-width: 455px;
+    }
+
+    .home_main-exhibitions-text {
+        display: block;
+    }
+
+    .home_main-young-stars-club-text {
+        top: 20%;
+        margin: 0 10%;
+    }
 
 
 
