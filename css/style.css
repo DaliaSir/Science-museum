@@ -577,7 +577,6 @@ footer {
     font-style: italic;
 }
 
-
 .exhibition_links-icon img {
     width: 100px;
     height: 100px;
@@ -643,12 +642,95 @@ footer {
 
 .events_night {
     background-color: #351C59;
-    color: #FFFFFF;
+}
+
+.events_aeronautics, .events_night, .events_energetica {
+    padding: 5%;
+    text-align: left;
+}
+
+.events_aeronautics, .events_energetica {    
+    background-color: #E1E1E1;
+    max-width: 280px;
+    padding: 25px 20px 20px 20px;
+    border-radius: 0 0 6px 6px; 
+    margin: 5% auto;
+}
+
+.events_aeronautics img, .events_night img, .events_energetica img {
+    width: 100%;
+}
+
+.events_night-content {
+    background-color: #FFFFFF;
+    color: #000000;
+    max-width: 280px;
+    padding: 25px 20px 20px 20px;
+    border-radius: 0 0 6px 6px; 
+    margin: 0 auto;
 }
 
 .events_subscribe {
-    background-color: #F6A448;  
+    background-color: #F6A448;
+    padding: 20px 20px;
+    text-align: center;
 }
+
+.events_subscribe p {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.events_subscribe label {
+    font-size: 1.5em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.events_subscribe input[type=submit] {
+    display: inline-block;
+    background-color: #3DADD9;
+    color: #FFFFFF;
+    padding: 10px 28px;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    box-shadow:  1px 1px 6px 1px  rgba(53, 28, 89, 0.2);
+    margin: 10px 0px;
+    font-family: 'Jura', 'Tahoma', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.events_subscribe input[type=submit]:hover {
+    background-color: rgba(61, 173, 217, 0.7);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.events_subscribe input[type=submit]:active {
+    background-color: rgba(61, 173, 217, 1);
+    font-size: 1.8em;
+}
+
+.events_subscribe input[type=email] {
+    width: 80%;
+    padding: 14px 20px;
+    margin: 8px 20px;
+    display: inline-block;
+    border: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 1.5em;
+    cursor: text;
+}
+
+.events_subscribe input[type=email]:focus {
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+}
+
 
 /* -------------------------------------------------------------------- GET INVOLVED
 ---------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -676,17 +758,113 @@ footer {
 /* -------------------------------------------------------------------- CONTACT
 ---------------------------------------------------------------------------------------------------------------------------------------------------- */
 
+.contact_form fieldset {
+    padding: 5%;
+    margin: 0 auto;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    max-width: 720px;
+    border: none;
+}
+
+.contact_form input[type=text], .contact_form input[type=email], .contact_form select, .contact_form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin: 20px 0;  
+    resize: vertical;
+    display: block;
+    background-color: #f7f7f7;
+    cursor: text;
+    font-size: 1.125em;
+    font-family: inherit;
+}
+
+.contact_form select {
+    cursor: pointer;
+}
+
+.contact_form input[type=submit] {
+    display: inline-block;
+    background-color: #3DADD9;
+    color: #FFFFFF;
+    padding: 10px 28px;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    box-shadow:  1px 1px 6px 1px  rgba(53, 28, 89, 0.2);
+    margin: 10px 0px;
+    font-family: 'Jura', 'Tahoma', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.contact_form input[type=submit]:hover {
+    background-color: rgba(61, 173, 217, 0.7);
+    transition: 0.2s;
+    cursor: pointer;
+}
 
 .contact_information {
     background-color: #351C59;
     color: #FFFFFF;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
 }
 
+.contact_information-info {
+    border-bottom: 1px solid #E1E1E1;
+    padding: 5%;
+}
 
+.contact_information-social {
+    padding: 5%;
+    margin: 5%;
+}
 
+.contact_information-info a {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: lowercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: inherit;
+    font-weight: 400;
+}
 
+.contact_information-info a:hover {
+    text-decoration: underline;
+    transition: 0.1s;
+}
 
+.contact_information-info a:active {
+    color: #F6A448;
+    font-size: 1.8em;
+}
 
+.contact_information-social a i {
+    padding-right: 15px;
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+
+.contact_information-social a i:hover {
+    color: #F6A448;
+    transition: 0.1s;
+}
+
+.contact_information-social a i:active {
+    font-size: 1.8em;
+}
+
+.contact_map iframe{
+    width: 100%;
+    border: none;
+}
 
 
 /* -------------------------------------------------------------------- MEDIA QUERIES 
@@ -694,13 +872,13 @@ footer {
 
 @media all and (min-width: 600px) {
 
-     /*----------HEADER----------*/
+/*----------HEADER----------*/
 
     header img {
         width: 100px;
     }
     
-    /*----------INTRO----------*/
+/*----------INTRO----------*/
     
     .main-intro {
         background-repeat: no-repeat;
@@ -736,10 +914,8 @@ footer {
         min-height: 450px;
     }
 
-    /*----------FONT SIZE----------*/
+/*----------FONT SIZE----------*/
 
-    
-    
     h1 {
         font-size: 3.5em;
         letter-spacing: -0.04em;
@@ -757,11 +933,8 @@ footer {
         font-size: 1.125em;
     }
 
-
-
-     /*----------HOME----------*/
-   
-
+/*----------HOME----------*/
+ 
     .home_main-event-container, .home_main-exhibitions-container {
         flex-direction: row;
     }
@@ -771,7 +944,7 @@ footer {
     }
 
     .big-img {
-        display: inline;
+        display: inline-block;
     }
 
     .home_main-event-content {
@@ -790,6 +963,7 @@ footer {
     .home_main-exhibitions-content {
         max-width: 380px;
     }
+
 /*----------VISIT----------*/
 
     .visit_hours tr {
@@ -798,6 +972,9 @@ footer {
 
     .visit_hours-location-container {
         flex-direction: row;
+    }
+    .visit_food , .visit_shop, .visit_location {
+        display: inline-block;
     }
 
     .visit_food img, .visit_shop img {
@@ -809,14 +986,6 @@ footer {
     .visit_food h2, .visit_shop h2 {
         margin-top: 0;
     }
-
-    .visit_food , .visit_shop {
-        display: inline-block;
-    }
-
-    
-
-   
 
 /*----------EXHIBITIONS----------*/
 
@@ -850,7 +1019,21 @@ footer {
         margin-top: 0;
     }
 
+/*----------EVENTS----------*/   
+
+    .events_aeronautics img, .events_night img, .events_energetica img {
+        width: 495px;
+    }
+
+    .events_aeronautics, .events_energetica, .events_night-content {    
+        max-width: 495px;
+    }
+    .events_subscribe input[type=email] {
+        width: 50%;
+    }
+    
 /*----------GET INVOLVED----------*/
+
     .get-involved_volunteer img, .get-involved_internships img {
         float: right;
         margin: 0 0 10px 5%;
@@ -873,7 +1056,21 @@ footer {
         margin-top: 0;
     }
 
-    
+/*----------CONTACT----------*/   
+
+    .contact_information {
+        flex-direction: row;
+    }
+
+    .contact_information-info {
+        border-bottom: none;
+        border-right: 1px solid #E1E1E1;
+    }
+
+    .contact_information-info a {
+        font-size: 1.5em;
+    }
+
 }
 
 @media all and (min-width: 992px) {
@@ -910,6 +1107,20 @@ footer {
         font-size: 1.5em;
     }
 
+    /*----------EVENTS----------*/   
+
+    .events_aeronautics img, .events_night img, .events_energetica img {
+        width: 800px;
+    }
+
+    .events_aeronautics, .events_energetica, .events_night-content {    
+        max-width: 800px;
+    }
+
+    .events_subscribe input[type=email] {
+        width: 30%;
+    }
+    
 }
 
 
