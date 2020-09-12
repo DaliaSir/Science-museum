@@ -132,7 +132,8 @@ a:hover {
 /* ------------------------------------------------------------ HEADER ----------------------------------------------------------------- */
 
 header {
-    background-color: #351C59;
+    background: rgba(53,28,89,1);
+    background: linear-gradient(132deg, rgba(115,32,109,1) 0%, rgba(53,28,89,1) 35%, rgba(61,173,217,1) 100%);
     padding: 10px 20px;
     position: relative;
 }
@@ -214,6 +215,7 @@ nav a:active {
     color: #FFFFFF;
 }
 
+ 
 
 /* ------------------------------------------------------------ FOOTER ----------------------------------------------------------------- */
 
@@ -337,6 +339,7 @@ footer {
     position: relative;
 }
 
+
 .main-intro-text p {
     line-height: 140%;
 }
@@ -388,9 +391,11 @@ footer {
     color: #FFFFFF;
 }
 
+
 .home_main-exhibitions-text {
     background-color: #F6A448;
-    color: #000000;
+    background: linear-gradient(186deg, rgba(246,164,72,1) 39%, rgba(217,26,131,1) 100%);
+    color: #FFFFFF;
     padding: 10px 20px;
     margin: 40px 10%;
     border-radius: 6px;
@@ -471,7 +476,6 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     height: 330px;
-    opacity: 0.6;
     background-size: cover;
     width: 100%;
 }
@@ -864,6 +868,7 @@ footer {
 .contact_map iframe{
     width: 100%;
     border: none;
+    height: 330px;
 }
 
 
@@ -877,7 +882,37 @@ footer {
     header img {
         width: 100px;
     }
+
+/*----------Navigation desktop----------*/
+
+/*nav {
+    display: inline-block;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul {
+    position: static;
+    float: none;
+}
+
+.navigation label {
+    display: none;
+}*/
+
     
+/*----------FOOTER----------*/
+
+    .column-hours table, .column-navigation a, .column-contact a {
+        font-size: 1.125em;
+    }
+
+
+
 /*----------INTRO----------*/
     
     .main-intro {
@@ -1077,6 +1112,10 @@ footer {
 
     header img {
         width: 110px;
+    }
+
+    .column-hours table, .column-navigation a, .column-contact a {
+        font-size: 1.5em;
     }
 
     .home_main-event-container {
