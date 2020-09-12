@@ -76,7 +76,7 @@ p {
 
 a {
     font-family: 'Jura', 'Tahoma', sans-serif;
-    font-size: 1.125em;
+    font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -98,11 +98,12 @@ a:hover {
 
 .button:hover {
     background-color: rgba(61, 173, 217, 0.7);
+    transition: 0.2s;
 }
 
 .button:active {
     background-color: rgba(61, 173, 217, 1);
-    font-size: 1.3em;
+    font-size: 1.8em;
 }
 
 .back-to-top {
@@ -120,10 +121,11 @@ a:hover {
 
 .back-to-top a:hover {
     text-decoration: underline;
+    transition: 0.2s;
 }
 
 .back-to-top a:active {
-    font-size: 1.3em;
+    font-size: 1.8em;
     color: #F6A448;
 }
 
@@ -138,6 +140,14 @@ header {
 header img {
     width: 90px;
 }
+
+.logo img:hover {
+    opacity: 0.8;
+}
+.logo img:active {
+    opacity: 1;
+}
+
 
 /* -------------------------------- Hamburger menu -------------------------------- */
 
@@ -178,11 +188,12 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
+    transition: 0.1s;
 }
 
 nav a:active {
     color: #F6A448;
-    font-size: 1.3em;
+    font-size: 1.6em;
 }
 
 #active {
@@ -192,6 +203,7 @@ nav a:active {
 .navigation i:hover {
     color: #F6A448;
     cursor: pointer;
+    transition: 0.1s;
 }
 
 .navigation i {
@@ -260,6 +272,7 @@ footer {
 
 .column-contact a:hover {
     text-decoration: underline;
+    transition: 0.1s;
 }
 
 .column-contact a:active {
@@ -273,6 +286,7 @@ footer {
 
 .column-contact a i:hover {
     color: #F6A448;
+    transition: 0.1s;
 }
 
 .column-contact a i:active {
@@ -291,6 +305,7 @@ footer {
 
 .column-navigation a:hover {
     text-decoration: underline;
+    transition: 0.1s;
 }
 
 .column-navigation a:active {
@@ -338,7 +353,7 @@ footer {
 
 .main-intro-text a {
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
 }
 
 .home_main-intro {
@@ -379,10 +394,12 @@ footer {
     padding: 10px 20px;
     margin: 40px 10%;
     border-radius: 6px;
+    display: none;
 }
 
-.home_main-exhibitions-text {
-    display: none;
+.home_main-exhibitions-text p {
+    font-style: italic;
+    line-height: 1.5em;
 }
 
  /*----------UPCOMING EVENTS----------*/
@@ -510,6 +527,12 @@ footer {
 .visit_shools {
     background-color: #F6A448;
     padding: 20px 5%;
+    text-align: center;
+}
+
+.visit_shools p {
+    font-style: italic;
+    line-height: 1.5em;
 }
 
 .visit_shools h2 {
@@ -527,6 +550,17 @@ footer {
     justify-content: space-around;
 }
 
+.visit_hours tr {
+    text-align: left;
+}
+
+.visit_hours td {
+    text-align: right;
+}
+
+.visit_hours td {
+    padding: 0 0 0 15px;
+}
 
 
 /* -------------------------------------------------------------------- EXHIBITIONS 
@@ -534,6 +568,12 @@ footer {
 
 .exibitions-describtion {
     background-color: #F6A448;
+    padding: 20px 5%;
+}
+.exibitions-describtion p {
+    font-weight: 500;
+    line-height: 1.5em;
+    font-style: italic;
 }
 
 
@@ -559,10 +599,41 @@ footer {
 .exhibition_links-icon5 {
     background-color: #D91A83;
 }
+.exhibitions_links {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 5%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.exhibition_links-icon {
+    margin: 0 20px;
+}
+.exhibition_links-icon a {
+    color: #000000;
+}
+.exhibition_links-icon img:hover {
+    width: 105px;
+    height: 105px;
+    opacity: 0.8;
+    transition: 0.1s;
+}
+.exhibition_links-icon img:active {
+    opacity: 1;
+}
+
+.exhibitions_cosmology, .exhibitions_robotics, .exhibitions_biology-medicine, .exhibitions_evolution, .exhibitions_ecology {
+    padding: 5%;
+}
 
 .exhibitions_cosmology, .exhibitions_robotics, .exhibitions_biology-medicine {
     background-color: #351C59;
     color: #FFFFFF;
+}
+
+.exhibitions_cosmology img, .exhibitions_robotics img, .exhibitions_biology-medicine img,.exhibitions_evolution img, .exhibitions_ecology img {
+    width: 100%;
 }
 
 
@@ -611,6 +682,12 @@ footer {
 ---------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media all and (min-width: 600px) {
+
+     /*----------HEADER----------*/
+
+    header img {
+        width: 100px;
+    }
     
     /*----------INTRO----------*/
     
@@ -715,17 +792,56 @@ footer {
 
     .visit_food , .visit_shop {
         display: inline-block;
-        background-position: center;
     }
 
     .visit_accessibility, .visit_shools {
         clear: both;
     }
 
+    .visit_hours tr {
+        font-size: 1.125em;
+    }
 
+/*----------EXHIBITIONS----------*/
+
+    .exhibitions_links {
+        flex-direction: row;
+    }
+
+    .exhibition_links-icon h2 {
+        font-size: 2.5em;
+    }
+
+    .exhibitions_cosmology img, .exhibitions_robotics img, .exhibitions_biology-medicine img {
+        float: left;
+        margin: 0 5% 10px 0;
+    }
+
+    .exhibitions_evolution img, .exhibitions_ecology img {
+        float: right;
+        margin: 0 0 10px 5%;
+    }
+
+    .exhibitions_cosmology, .exhibitions_robotics, .exhibitions_biology-medicine, .exhibitions_evolution, .exhibitions_ecology {
+        display: inline-block;
+    }
+
+    .exhibitions_cosmology img, .exhibitions_robotics img, .exhibitions_biology-medicine img,.exhibitions_evolution img, .exhibitions_ecology img {
+        width: 495px;
+    }
+
+    .exhibitions_cosmology h2, .exhibitions_robotics h2, .exhibitions_biology-medicine h2,.exhibitions_evolution h2, .exhibitions_ecology h2 {
+        margin-top: 0;
+    }
+
+    
 }
 
 @media all and (min-width: 992px) {
+
+    header img {
+        width: 110px;
+    }
 
     .home_main-event-container {
         justify-content: center;
@@ -755,11 +871,20 @@ footer {
         font-size: 2.25em;
     }
 
+    .visit_hours tr {
+        font-size: 1.5em;
+    }
+
 }
 
 
 
 @media all and (min-width: 1690px) {
+
+    header img {
+        width: 120px;
+    }
+
     .home_main-intro {
         background-image: url("../images/home/home-main-milky-way-greg-rakozy-big.jpg");
     }
