@@ -502,15 +502,32 @@ footer {
 
 /* -------------------------------------------------------------------- VISIT 
 ---------------------------------------------------------------------------------------------------------------------------------------------------- */
+.visit_hours-location-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 .visit_hours {
     padding: 5% 5%;
+}
+.visit_hours tr {
+    text-align: left;
+}
+.visit_hours td {
+    text-align: right;
+}
+.visit_hours td {
+    padding: 0 0 0 15px;
 }
 
 .visit_location, .visit_food, .visit_shop {
     background-color: #351C59;
     color: #FFFFFF;
-    padding: 5% 5%;
+    padding: 5%;
+}
+.visit_food img, .visit_shop img {
+    width: 100%;
 }
 
 .visit_admission {
@@ -529,12 +546,10 @@ footer {
     padding: 20px 5%;
     text-align: center;
 }
-
 .visit_shools p {
     font-style: italic;
     line-height: 1.5em;
 }
-
 .visit_shools h2 {
     text-align: center;
 }
@@ -544,23 +559,9 @@ footer {
     font-weight: 700;
 }
 
-.visit_hours-location-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 
-.visit_hours tr {
-    text-align: left;
-}
 
-.visit_hours td {
-    text-align: right;
-}
 
-.visit_hours td {
-    padding: 0 0 0 15px;
-}
 
 
 /* -------------------------------------------------------------------- EXHIBITIONS 
@@ -660,7 +661,17 @@ footer {
 .get-involved_contact {
     background-color: #F6A448;
     text-align: center;
+    padding: 20px 5%;
 }
+
+.get-involved_volunteer, .get-involved_support, .get-involved_internships, .get-involved_researchers {
+    padding: 5%;
+}
+
+.get-involved_volunteer img, .get-involved_support img, .get-involved_internships img, .get-involved_researchers img {
+    width: 100%;
+}
+
 
 /* -------------------------------------------------------------------- CONTACT
 ---------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -735,7 +746,7 @@ footer {
     }
     
     h2 {
-        font-size: 2.25em;
+        font-size: 2.75em;
     }
     
     h3, h4 {
@@ -781,26 +792,31 @@ footer {
     }
 /*----------VISIT----------*/
 
+    .visit_hours tr {
+            font-size: 1.125em;
+        }
+
     .visit_hours-location-container {
         flex-direction: row;
     }
 
     .visit_food img, .visit_shop img {
         float: left;
-        margin: 5%;
+        margin: 0 5% 10px 0;
+        width: 495px;
+    }
+
+    .visit_food h2, .visit_shop h2 {
+        margin-top: 0;
     }
 
     .visit_food , .visit_shop {
         display: inline-block;
     }
 
-    .visit_accessibility, .visit_shools {
-        clear: both;
-    }
+    
 
-    .visit_hours tr {
-        font-size: 1.125em;
-    }
+   
 
 /*----------EXHIBITIONS----------*/
 
@@ -809,7 +825,7 @@ footer {
     }
 
     .exhibition_links-icon h2 {
-        font-size: 2.5em;
+        font-size: 2.25em;
     }
 
     .exhibitions_cosmology img, .exhibitions_robotics img, .exhibitions_biology-medicine img {
@@ -834,6 +850,29 @@ footer {
         margin-top: 0;
     }
 
+/*----------GET INVOLVED----------*/
+    .get-involved_volunteer img, .get-involved_internships img {
+        float: right;
+        margin: 0 0 10px 5%;
+    }
+
+    .get-involved_support img, .get-involved_researchers img {
+        float: left;
+        margin: 0 5% 10px 0;
+    }
+
+    .get-involved_volunteer, .get-involved_support, .get-involved_internships, .get-involved_researchers {
+        display: inline-block;
+    }
+    
+    .get-involved_volunteer img, .get-involved_support img, .get-involved_internships img, .get-involved_researchers img {
+        width: 495px;
+    }
+
+    .get-involved_volunteer h2, .get-involved_support h2, .get-involved_internships h2, .get-involved_researchers h2 {
+        margin-top: 0;
+    }
+
     
 }
 
@@ -849,10 +888,6 @@ footer {
 
     .home_main-event {
         margin: 60px;
-    }
-
-    h2 {
-        font-size: 3.5em;
     }
     
     h3, h4 {
