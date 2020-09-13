@@ -137,6 +137,7 @@ a:hover {
 
 .header {
     background: rgba(53,28,89,1);
+    background: linear-gradient(34deg, rgba(115,32,109,1) 0%, rgba(53,28,89,1) 36%, rgba(61,173,217,1) 100%);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
     position: fixed;
     width: 100%;
@@ -158,13 +159,13 @@ a:hover {
 }
     
 .header ul a:hover {
-    text-decoration: underline;
+    font-size: 1.6em;
+    color: #c4c4c4;
     transition: 0.1s;
 }
 
 .header ul a:active {
     color: #F6A448;
-    font-size: 1.6em;
 }
 
 header .logo {
@@ -412,11 +413,78 @@ footer {
 /* -------------------------------------------------------------------- HOME PAGE 
 ---------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-.home_main-exhibition-spaces {
-    background-color: #351C59;
+ /*----------UPCOMING EVENTS----------*/
+
+.home_main-upcoming-events, .home_main-exhibition-spaces {
+    text-align: center;
+    padding: 40px 20px;
+}
+.home_main-upcoming-events h2 {
     color: #FFFFFF;
+    font-weight: 700;
 }
 
+.home_main-upcoming-events {
+    background-color: #351C59;
+}
+
+.home_main-upcoming-events a, .home_main-exhibition-spaces a {
+    margin: 20px;
+}
+
+.home_main-event-container {
+    display: flex;
+    text-align: left;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+}
+
+.home_main-event-content {
+    padding: 25px 20px 20px 20px;
+}
+    
+    
+.home_main-event {
+    background-color: #FFFFFF;
+    margin: 20px;
+    border-radius: 0 0 6px 6px;
+}
+
+.home_main-event img, .home_main-exhibitions img {
+    width: 100%;
+}
+
+.big-img {
+    display: none;
+}
+
+ /*----------EXHIBITIONS----------*/
+
+
+ .home_main-exhibition-spaces {
+    background-color: #FFFFFF;
+    color:  #351C59;
+} 
+
+.home_main-exhibitions-container {
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+}
+
+.home_main-exhibitions-content {
+    color: #000000;
+    padding: 20px;
+}
+
+.home_main-exhibitions {
+    margin: 20px;
+    background-color: #E1E1E1;
+    border-radius: 0 0 6px 6px;
+}
 
 .home_main-exhibitions-text {
     background-color: #F6A448;
@@ -431,68 +499,6 @@ footer {
 .home_main-exhibitions-text p {
     font-style: italic;
     line-height: 1.5em;
-}
-
- /*----------UPCOMING EVENTS----------*/
-
-.home_main-upcoming-events, .home_main-exhibition-spaces {
-    text-align: center;
-    padding: 40px 20px;
-}
-.home_main-upcoming-events h2 {
-    color: #351C59;
-    font-weight: 700;
-}
-
-.home_main-upcoming-events a, .home_main-exhibition-spaces a {
-    margin: 20px;
-}
-
-.home_main-event-container {
-    display: flex;
-    text-align: left;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.home_main-event-content {
-    background-color: #E1E1E1;
-    max-width: 280px;
-    padding: 25px 20px 20px 20px;
-    border-radius: 0 0 6px 6px;
-}
-    
-.home_main-event {
-    margin: 20px;
-}
-
-.home_main-event img, .home_main-exhibitions img {
-    width: 100%;
-}
-
-.big-img {
-    display: none;
-}
-
- /*----------EXHIBITIONS----------*/
-
-.home_main-exhibitions-container {
-    display: flex;
-    text-align: left;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-.home_main-exhibitions-content {
-    background-color: #FFFFFF;
-    color: #000000;
-    max-width: 280px;
-    padding: 20px;
-    border-radius: 0 0 6px 6px;
-}
-
-.home_main-exhibitions {
-    margin: 20px;
 }
 
 /*----------YOUNG STARS CLUB----------*/
@@ -573,8 +579,10 @@ footer {
 
 .visit_shools {
     background-color: #F6A448;
+    background: linear-gradient(186deg, rgba(246,164,72,1) 39%, rgba(217,26,131,1) 100%);
     padding: 20px 5%;
     text-align: center;
+    color: #FFFFFF;
 }
 .visit_shools p {
     font-style: italic;
@@ -594,6 +602,8 @@ footer {
 
 .exibitions-describtion {
     background-color: #F6A448;
+    background: linear-gradient(186deg, rgba(246,164,72,1) 39%, rgba(217,26,131,1) 100%);
+    color: #FFFFFF;
     padding: 20px 5%;
 }
 .exibitions-describtion p {
@@ -667,17 +677,16 @@ footer {
 
 .events_night {
     background-color: #351C59;
+    padding: 5% 0;
 }
 
 .events_aeronautics, .events_night, .events_energetica {
-    padding: 5%;
     text-align: left;
 }
 
 .events_aeronautics, .events_energetica {    
     background-color: #E1E1E1;
     max-width: 280px;
-    padding: 25px 20px 20px 20px;
     border-radius: 0 0 6px 6px; 
     margin: 5% auto;
 }
@@ -690,13 +699,17 @@ footer {
     background-color: #FFFFFF;
     color: #000000;
     max-width: 280px;
-    padding: 25px 20px 20px 20px;
     border-radius: 0 0 6px 6px; 
     margin: 0 auto;
 }
 
+.events_events-content {
+   padding: 20px; 
+}
 .events_subscribe {
     background-color: #F6A448;
+    background: linear-gradient(186deg, rgba(246,164,72,1) 39%, rgba(217,26,131,1) 100%);
+    color: #FFFFFF;
     padding: 20px 20px;
     text-align: center;
 }
@@ -767,6 +780,8 @@ footer {
 
 .get-involved_contact {
     background-color: #F6A448;
+    background: linear-gradient(186deg, rgba(246,164,72,1) 39%, rgba(217,26,131,1) 100%);
+    color: #FFFFFF;
     text-align: center;
     padding: 20px 5%;
 }
@@ -924,12 +939,14 @@ footer {
         justify-content: space-between;
         align-items: center;
         margin: 10px 1% 0 0;
+        background-color: transparent;
     }
 
     .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
     }
 
   
@@ -1000,6 +1017,7 @@ footer {
  
     .home_main-event-container, .home_main-exhibitions-container {
         flex-direction: row;
+        align-items: stretch;
     }
 
     .small-img {
@@ -1024,7 +1042,11 @@ footer {
     }
 
     .home_main-exhibitions-content {
-        max-width: 380px;
+        max-width: 455px;
+    }
+
+    .home_main-upcoming-events h2, .home_main-exhibition-spaces h2 {
+        font-size: 2.5em;
     }
 
 /*----------VISIT----------*/
@@ -1144,6 +1166,11 @@ footer {
 
     .header li a {
         font-size: 1.5em;
+        padding: 15px;
+    }
+
+    .header li a:hover {
+        font-size: 1.6em;
     }
 
     .main-intro-text {
@@ -1207,6 +1234,10 @@ footer {
 
     .header li a {
         font-size: 2em;
+    }
+
+    .header li a:hover {
+        font-size: 2.1em;
     }
 
     .home_main-intro {
