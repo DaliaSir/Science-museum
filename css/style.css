@@ -131,31 +131,8 @@ a:hover {
 
 /* ------------------------------------------------------------ HEADER ----------------------------------------------------------------- */
 
-header img {
+.header img {
     width: 90px;
-}
-
-/*header {
-    background: rgba(53,28,89,1);
-    background: linear-gradient(132deg, rgba(115,32,109,1) 0%, rgba(53,28,89,1) 35%, rgba(61,173,217,1) 100%);
-    padding: 10px 20px;
-    position: relative;
-}
-
-
-
-.logo img:hover {
-    opacity: 0.8;
-}
-.logo img:active {
-    opacity: 1;
-}*/
-
-
-/* -------------------------------- Hamburger menu -------------------------------- */
-
-nav a {
-    color:#FFFFFF;
 }
 
 .header {
@@ -180,7 +157,6 @@ nav a {
     color: #FFFFFF;
 }
     
-
 .header ul a:hover {
     text-decoration: underline;
     transition: 0.1s;
@@ -191,26 +167,26 @@ nav a {
     font-size: 1.6em;
 }
 
-.header .logo {
+header .logo {
     float: left;
     display: block;
-    padding: 10px 20px;
+    padding: 8px 20px;
 }
 
-.header .menu {
+header .menu {
     clear: both;
     max-height: 0;
     transition: max-height 0.2s ease-out;
 }
 
-.header .menu-icon {
+header .menu-icon {
     padding: 28px 20px;
     position: relative;
     float: right;
     cursor: pointer;
 }
 
-.header .menu-icon .nav-icon {
+header .menu-icon .nav-icon {
     background: #FFFFFF;
     display: block;
     height: 2px;
@@ -219,7 +195,7 @@ nav a {
     transition: background 0.2s ease-out;
 }
 
-.header .menu-icon .nav-icon:before {
+header .menu-icon .nav-icon:before {
     background: #FFFFFF;
     content: "";
     display: block;
@@ -230,7 +206,7 @@ nav a {
     top: 5px;
 }
 
-.header .menu-icon .nav-icon:after {
+header .menu-icon .nav-icon:after {
     background: #FFFFFF;
     content: "";
     display: block;
@@ -241,92 +217,31 @@ nav a {
     top: -5px;
 }
 
-.header .menu-btn {
+header .menu-btn {
     display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+header .menu-btn:checked ~ .menu {
     max-height: 350px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon {
+header .menu-btn:checked ~ .menu-icon .nav-icon {
     background: transparent;
 } 
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+header .menu-btn:checked ~ .menu-icon .nav-icon:before {
     transform: rotate(-45deg);
     top: 0;
 } 
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+header .menu-btn:checked ~ .menu-icon .nav-icon:after {
     transform: rotate(45deg);
     top: 0;
 } 
 
-/*nav {
-    display: none;
-}
-
-#hamburger-menu {
-    display: none;
-}
-
-#hamburger-menu:checked ~ nav {
-    display: block;
-}
-
-.navigation {
-    color: #FFFFFF;
-}
-
-nav ul {
-    list-style: none;
-    line-height: 2em;
-    float: right;
-    background-color: rgba(53, 28, 89, 1);
-    padding: 20px;
-    margin: 0;
-    box-shadow: 0px 10px 25px 0 rgba(0, 0, 0, 0.5);
-    position: absolute;
-    right: 20px;
-    top: 75px;
-    z-index: 2;
-    border-radius: 0 0 6px 6px;
-}
-
-nav a {
-    color:#FFFFFF;
-}
-
-nav a:hover {
-    text-decoration: underline;
-    transition: 0.1s;
-}
-
-nav a:active {
-    color: #F6A448;
-    font-size: 1.6em;
-}
-
 #active {
     color: #F6A448;
 }
-
-.navigation i:hover {
-    color: #F6A448;
-    cursor: pointer;
-    transition: 0.1s;
-}
-
-.navigation i {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 1.5rem;
-    color: #FFFFFF;
-}*/
-
- 
 
 /* ------------------------------------------------------------ FOOTER ----------------------------------------------------------------- */
 
@@ -427,6 +342,7 @@ footer {
 }
 
 /* -------------------------------- Intro -------------------------------- */
+
 .main-intro {
     background-repeat: no-repeat;
     background-position: center;
@@ -445,9 +361,8 @@ footer {
     border-radius: 6px;
     color: #FFFFFF;
     position: relative;
-    top: 40px;
+    top: 90px;
     z-index: 1;
-    position: relative;
 }
 
 
@@ -673,11 +588,6 @@ footer {
     color: #351C59;
     font-weight: 700;
 }
-
-
-
-
-
 
 /* -------------------------------------------------------------------- EXHIBITIONS 
 ---------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -990,26 +900,22 @@ footer {
 
 /*----------HEADER----------*/
 
-    .header img {
-        width: 100px;
-    }
-
     .header li {
         float: left;
     }
 
     .header li a {
-        padding: 15px;
+        padding: 10px;
         font-size: 1em;
     }
 
-    .header .menu {
+    header .menu {
         clear: none;
         float: right;
         max-height: none;
     }
 
-    .header .menu-icon {
+    header .menu-icon {
         display: none;
     }
 
@@ -1018,6 +924,12 @@ footer {
         justify-content: space-between;
         align-items: center;
         margin: 10px 1% 0 0;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
   
@@ -1064,7 +976,7 @@ footer {
     .main-intro-text {
         min-height: 450px;
     }
-
+    
 /*----------FONT SIZE----------*/
 
     h1 {
@@ -1073,7 +985,7 @@ footer {
     }
     
     h2 {
-        font-size: 2.75em;
+        font-size: 2em;
     }
     
     h3, h4 {
@@ -1227,11 +1139,15 @@ footer {
 @media all and (min-width: 992px) {
 
     .header img {
-        width: 110px;
+        width: 100px;
     }
 
     .header li a {
         font-size: 1.5em;
+    }
+
+    .main-intro-text {
+        top: 110px;
     }
 
     .column-hours table, .column-navigation a, .column-contact a {
@@ -1281,7 +1197,6 @@ footer {
     }
     
 }
-
 
 
 @media all and (min-width: 1690px) {
