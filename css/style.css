@@ -131,28 +131,139 @@ a:hover {
 
 /* ------------------------------------------------------------ HEADER ----------------------------------------------------------------- */
 
-header {
+header img {
+    width: 90px;
+}
+
+/*header {
     background: rgba(53,28,89,1);
     background: linear-gradient(132deg, rgba(115,32,109,1) 0%, rgba(53,28,89,1) 35%, rgba(61,173,217,1) 100%);
     padding: 10px 20px;
     position: relative;
 }
 
-header img {
-    width: 90px;
-}
+
 
 .logo img:hover {
     opacity: 0.8;
 }
 .logo img:active {
     opacity: 1;
-}
+}*/
 
 
 /* -------------------------------- Hamburger menu -------------------------------- */
 
-nav {
+nav a {
+    color:#FFFFFF;
+}
+
+.header {
+    background: rgba(53,28,89,1);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgba(53, 28, 89, 1);
+}
+
+.header ul a {
+    display: block;
+    padding: 10px 20px;
+    color: #FFFFFF;
+}
+    
+
+.header ul a:hover {
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+.header ul a:active {
+    color: #F6A448;
+    font-size: 1.6em;
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    padding: 10px 20px;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.header .menu-icon .nav-icon {
+    background: #FFFFFF;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before {
+    background: #FFFFFF;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    top: 5px;
+}
+
+.header .menu-icon .nav-icon:after {
+    background: #FFFFFF;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    top: -5px;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 350px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+} 
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+} 
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+} 
+
+/*nav {
     display: none;
 }
 
@@ -213,7 +324,7 @@ nav a:active {
     right: 20px;
     font-size: 1.5rem;
     color: #FFFFFF;
-}
+}*/
 
  
 
@@ -879,32 +990,37 @@ footer {
 
 /*----------HEADER----------*/
 
-    header img {
+    .header img {
         width: 100px;
     }
 
-/*----------Navigation desktop----------*/
+    .header li {
+        float: left;
+    }
 
-/*nav {
-    display: inline-block;
-    text-align: center;
-}
+    .header li a {
+        padding: 15px;
+        font-size: 1em;
+    }
 
-nav li {
-    display: inline-block;
-    padding: 20px;
-}
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
 
-nav ul {
-    position: static;
-    float: none;
-}
+    .header .menu-icon {
+        display: none;
+    }
 
-.navigation label {
-    display: none;
-}*/
+    .header ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 1% 0 0;
+    }
 
-    
+  
 /*----------FOOTER----------*/
 
     .column-hours table, .column-navigation a, .column-contact a {
@@ -1110,8 +1226,12 @@ nav ul {
 
 @media all and (min-width: 992px) {
 
-    header img {
+    .header img {
         width: 110px;
+    }
+
+    .header li a {
+        font-size: 1.5em;
     }
 
     .column-hours table, .column-navigation a, .column-contact a {
@@ -1143,7 +1263,7 @@ nav ul {
     }
 
     .visit_hours tr {
-        font-size: 1.5em;
+        font-size: 1.125em;
     }
 
     /*----------EVENTS----------*/   
@@ -1166,8 +1286,12 @@ nav ul {
 
 @media all and (min-width: 1690px) {
 
-    header img {
+    .header img {
         width: 120px;
+    }
+
+    .header li a {
+        font-size: 2em;
     }
 
     .home_main-intro {
